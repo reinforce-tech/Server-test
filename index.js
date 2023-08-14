@@ -6,11 +6,19 @@ app.get("/", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-	res.send("Just doing good like always");
+	res.send(" about me nothing much just like to type things");
+});
+
+app.get("/home", (req, res) => {
+	res.send("You are in home ");
 });
 
 app.get("/about/home", (req, res) => {
-	res.send("home");
+	res.send("You are in home");
+});
+
+app.get("/home/about", (req, res) => {
+	res.send("about me nothing much just like to type things ");
 });
 
 app.listen(5000, () => {
